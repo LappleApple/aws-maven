@@ -1,3 +1,31 @@
+# Updated for Zalando needs
+
+* Supports getting AWS credentials from `~/.aws/credentials`
+* Deployed to http://repo1.maven.org/maven2/org/zalando/org/springframework/build/aws-maven/
+
+## Usage
+
+```xml
+<project>
+  ...
+  <build>
+    ...
+    <extensions>
+      ...
+      <extension>
+        <groupId>org.zalando.org.springframework.build</groupId>
+        <artifactId>aws-maven</artifactId>
+        <version>5.0.0.RELEASE-zal-1</version>
+      </extension>
+      ...
+    </extensions>
+    ...
+  </build>
+  ...
+</project>
+```
+
+
 # AWS Maven Wagon
 This project is a [Maven Wagon][wagon] for [Amazon S3][s3].  In order to to publish artifacts to an S3 bucket, the user (as identified by their access key) must be listed as an owner on the bucket.
 
